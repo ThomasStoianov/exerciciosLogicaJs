@@ -6,10 +6,10 @@ const matriz = require("./matriz.json")
 
 let numeroColunas = matriz[0].length
 
-for(let j = 0; j < numeroColunas; j++) {
+for(let i = 0; i < numeroColunas; i++) {
     let somaColunas = 0
-    for(let i = 0; i < matriz.length; i++) {
-        somaColunas += matriz[i][j]
+    for(let j = 0; j < matriz.length; j++) {
+        somaColunas += matriz[j][i]
     }
 
     console.log(somaColunas)
